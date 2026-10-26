@@ -1,15 +1,12 @@
 #!/bin/bash
+
 app_name=catalogue
-source  ./common.sh
-
+source ./common.sh
 check_root
-
 
 app_setup
 nodejs_setup
 systemd_setup
-
-
 
 cp "$scripts_dir/mongo.repo" /etc/yum.repos.d/mongo.repo
 validate $? "Adding Mongo repo"
@@ -28,5 +25,4 @@ else
 fi
 
 restart
-
 total_time

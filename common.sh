@@ -4,7 +4,7 @@ user_id=$(id -u)
 logs_folder="/var/log/roboshop"
 logs_file="${logs_folder}/${0}.log"
 scripts_dir=$(dirname "$(realpath "$0")")
-domain_name="daws92s.store"
+domain_name="teja97s.store"
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
@@ -116,4 +116,5 @@ restart(){
 
 total_time(){
     echo -e "$(timestamp) [INFO] Script completed in $SECONDS seconds" | tee -a $logs_file
-    echo -e "$(timestamp) [INFO] ==== Script completed Execution =====" | tee -a $logs_file    
+    echo -e "$(timestamp) [INFO] ==== Script completed Execution =====" | tee -a $logs_file   
+} 
